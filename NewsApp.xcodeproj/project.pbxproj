@@ -14,6 +14,9 @@
 		406961BC28CF642800D2416F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406961BB28CF642800D2416F /* Assets.xcassets */; };
 		406961BF28CF642800D2416F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406961BD28CF642800D2416F /* LaunchScreen.storyboard */; };
 		406961C728CF655500D2416F /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406961C628CF655500D2416F /* NewsCell.swift */; };
+		406961CD28CF6B0800D2416F /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406961CC28CF6B0800D2416F /* News.swift */; };
+		406961CF28CF6CB700D2416F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406961CE28CF6CB700D2416F /* WebService.swift */; };
+		406961D128CF743D00D2416F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406961D028CF743D00D2416F /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		406961BE28CF642800D2416F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406961C028CF642800D2416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406961C628CF655500D2416F /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		406961CC28CF6B0800D2416F /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		406961CE28CF6CB700D2416F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		406961D028CF743D00D2416F /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		406961B128CF642600D2416F /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
-				406961B228CF642600D2416F /* AppDelegate.swift */,
-				406961B428CF642600D2416F /* SceneDelegate.swift */,
-				406961B628CF642600D2416F /* ViewController.swift */,
-				406961C628CF655500D2416F /* NewsCell.swift */,
+				406961CB28CF6AEF00D2416F /* Service */,
+				406961CA28CF6AE500D2416F /* ViewModel */,
+				406961C928CF6ADB00D2416F /* Model */,
+				406961C828CF6AAD00D2416F /* View */,
 				406961B828CF642600D2416F /* Main.storyboard */,
 				406961BB28CF642800D2416F /* Assets.xcassets */,
 				406961BD28CF642800D2416F /* LaunchScreen.storyboard */,
 				406961C028CF642800D2416F /* Info.plist */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		406961C828CF6AAD00D2416F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				406961B228CF642600D2416F /* AppDelegate.swift */,
+				406961B428CF642600D2416F /* SceneDelegate.swift */,
+				406961B628CF642600D2416F /* ViewController.swift */,
+				406961C628CF655500D2416F /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		406961C928CF6ADB00D2416F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				406961CC28CF6B0800D2416F /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		406961CA28CF6AE500D2416F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				406961D028CF743D00D2416F /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		406961CB28CF6AEF00D2416F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				406961CE28CF6CB700D2416F /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406961CF28CF6CB700D2416F /* WebService.swift in Sources */,
 				406961B728CF642600D2416F /* ViewController.swift in Sources */,
 				406961B328CF642600D2416F /* AppDelegate.swift in Sources */,
 				406961C728CF655500D2416F /* NewsCell.swift in Sources */,
+				406961D128CF743D00D2416F /* NewsViewModel.swift in Sources */,
+				406961CD28CF6B0800D2416F /* News.swift in Sources */,
 				406961B528CF642600D2416F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
