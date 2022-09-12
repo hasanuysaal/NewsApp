@@ -13,6 +13,7 @@
 		406961BA28CF642600D2416F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406961B828CF642600D2416F /* Main.storyboard */; };
 		406961BC28CF642800D2416F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406961BB28CF642800D2416F /* Assets.xcassets */; };
 		406961BF28CF642800D2416F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406961BD28CF642800D2416F /* LaunchScreen.storyboard */; };
+		406961C728CF655500D2416F /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406961C628CF655500D2416F /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		406961BB28CF642800D2416F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406961BE28CF642800D2416F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406961C028CF642800D2416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		406961C628CF655500D2416F /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				406961B228CF642600D2416F /* AppDelegate.swift */,
 				406961B428CF642600D2416F /* SceneDelegate.swift */,
 				406961B628CF642600D2416F /* ViewController.swift */,
+				406961C628CF655500D2416F /* NewsCell.swift */,
 				406961B828CF642600D2416F /* Main.storyboard */,
 				406961BB28CF642800D2416F /* Assets.xcassets */,
 				406961BD28CF642800D2416F /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				406961B728CF642600D2416F /* ViewController.swift in Sources */,
 				406961B328CF642600D2416F /* AppDelegate.swift in Sources */,
+				406961C728CF655500D2416F /* NewsCell.swift in Sources */,
 				406961B528CF642600D2416F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
