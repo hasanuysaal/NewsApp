@@ -19,6 +19,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        // Change labels in Cell lines to "0", add height constraint and give a minimum height on Storyboard
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
+        
         getData()
         
     }
@@ -50,6 +54,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.storyLabel.text = newsViewModel.story
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 
 }
